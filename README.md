@@ -25,7 +25,7 @@ es un marco de software open source para el lenguaje de programación Java, el c
 ## Referencias
 https://prezi.com/urdnna4bcsdg/aplicaciones-de-la-derivada-en-ingenieria-de-sistemas/
 ### librerias 
----JFreeChart---
+#### ---JFreeChart---
 https://sourceforge.net/projects/jfreechart/files/
----Jbcparser---
+#### ---Jbcparser---
 http://www.gobestcode.com/html/math_parser_for_java.html
