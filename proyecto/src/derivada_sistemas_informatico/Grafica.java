@@ -18,26 +18,24 @@ import org.jfree.data.xy.XYSeriesCollection;
  * @author THE_PUNISHER
  */
 public class Grafica {
-    
+
     JFreeChart grafica;
     XYSeriesCollection datos = new XYSeriesCollection();
     String titulo;
     String etiquetax;
     String etiquetay;
-    
+
     public Grafica(String t, String x, String y) {
         titulo = t;
         etiquetax = x;
         etiquetay = y;
         grafica = ChartFactory.createXYLineChart(titulo, x, y, datos, PlotOrientation.VERTICAL, true, true, true);
     }
-    
+
     public Grafica() {
         this("Grafico", "x", "y");
     }
 
-   
-    
     public void agregarGrafica(String id, double[] x, double[] y) {
         XYSeries s = new XYSeries(id);
         int n = x.length;
@@ -54,6 +52,6 @@ public class Grafica {
 
     public JPanel ObtineGrafica() {
         return new ChartPanel(grafica);
-        
+
     }
 }

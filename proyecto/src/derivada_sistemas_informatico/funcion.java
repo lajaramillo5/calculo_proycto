@@ -17,18 +17,16 @@ public class funcion {
     String definicion;
     IMathParser parser = MathParserFactory.create();
 
-     funcion(String def) {
+    public funcion(String def) {
         definicion = def;
         parser.setExpression(def);
     }
-
-   
 
     public double eval(double x) throws Exception {
         double r = Double.NaN;
         parser.setX(x);
         r = parser.getValue();
-        return 0;
+        return r;
 
     }
 
@@ -44,7 +42,7 @@ public class funcion {
     public double[] rango(double x0, double xn, double d) {
         int n = (int) (Math.abs(xn - x0) / d);
         double[] r = new double[n];
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <n; i++) {
             r[i] = x0;
             x0 += d;
         }
